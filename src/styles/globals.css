@@ -17,3 +17,15 @@
 body {
   background-color: #F2F0E9;
 }
+
+body {
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+}
+
+/*スクロールバー非表示（Chrome・Safari）*/
+body::-webkit-scrollbar {
+  display: none;
+}

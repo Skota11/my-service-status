@@ -23,9 +23,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className='text-center text-2xl my-12 text-osyare_black'>Skota11&apos;s Service Status</h1>
+        <h1 className='text-center text-2xl mt-12 mb-4 text-osyare_black'>Skota11&apos;s Service Status</h1>
+        <p className='my-8 text-center text-xl text-osyare_black'><a href="https://skota11.com" target="_blank" rel="noopener noreferrer">Website</a> | <a href="https://github.com/Skota11" target="_blank" rel="noopener noreferrer">Github</a></p>
       <div className='flex place-content-center my-8'>
-            <div className='rounded-xl w-4/5 bg-picton_blue max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-xl'>
+            <div className='rounded-xl w-4/5 bg-picton_blue max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-2xl'>
               <h2 className='my-4 text-xl text-osyare_black'>こたすき～ / KotaSkey</h2>
                 <div>
                   <a className='underline text-osyare_black' href="https://mi.skota11.com">こたすき～ / KotaSkey</a>
@@ -37,7 +38,7 @@ export default function Home() {
               </div>
             </div>
             <div className='flex place-content-center my-8'>
-            <div className='rounded-xl w-4/5 bg-st_tropaz max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-xl'>
+            <div className='rounded-xl w-4/5 bg-st_tropaz max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-2xl'>
               <h2 className='my-4 text-xl'>My-Discord-Status</h2>
                 <div>
                   <p>Skota11のDiscordのステータスを取得するものです。</p>
