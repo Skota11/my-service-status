@@ -39,9 +39,9 @@ export default function Home() {
             </div>
             <div className='flex place-content-center my-8'>
             <div className='rounded-xl w-4/5 bg-st_tropaz max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-2xl'>
-              <h2 className='my-4 text-xl'>My-Discord-Status</h2>
+              <h2 className='my-4 text-xl'>RaspberryPi</h2>
                 <div>
-                  <p>Skota11のDiscordのステータスを取得するものです。</p>
+                  <p>自宅鯖のラズパイです</p>
                 </div>
                 <hr className='my-4' />
                 <h2 className='my-2 text-xl'>Status</h2>
