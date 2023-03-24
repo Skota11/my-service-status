@@ -31,6 +31,7 @@ export default function Home() {
                 <div>
                   <a className='underline text-osyare_black' href="https://mi.skota11.com">こたすき～ / KotaSkey</a>
                   <p className='text-osyare_black'>Misskeyサーバーです</p>
+                  <p><a href="https://stats.uptimerobot.com/0Bny6Uk3vq/793949437" target="_blank" rel="noopener noreferrer">UpTimeRobot</a></p>
                 </div>
                 <hr className='my-4' />
                 <h2 className='my-2 text-xl text-osyare_black'>Status</h2>
