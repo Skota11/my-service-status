@@ -9,10 +9,12 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const [Activities1 , setActivities1] = useState("取得中");
   const [Activities2 , setActivities2] = useState("取得中");
+  const [Activities3 , setActivities3] = useState("取得中");
   //useEffect
   useEffect(() => {
     getCo1().then(res => setActivities1(res));
     getCo2().then(res => setActivities2(res));
+    getCo3().then(res => setActivities3(res));
   },[]);
   return (
     <>
@@ -47,6 +49,9 @@ export default function Home() {
                 <hr className='my-4' />
                 <h2 className='my-2 text-xl'>Status</h2>
                 {Activities2}
+                <hr className='my-4' />
+                <h2 className='my-2 text-xl'>温度</h2>
+                {Activities3}℃ <br /><button className='mt-2 p-2 border-2' onClick={() => {getCo3().then(res => setActivities3(res))}}>更新</button>
               </div>
             </div>
       </main>
@@ -62,6 +67,11 @@ const getCo1 = async () => {
 };
 const getCo2 = async () => {
   const ac = await (await fetch("/api/ac.skota11.com-activities")).json();
+  console.log(ac.main)
+  return ac.main;
+};
+const getCo3 = async () => {
+  const ac = await (await fetch("/api/temp.skota11.com")).json();
   console.log(ac.main)
   return ac.main;
 };
